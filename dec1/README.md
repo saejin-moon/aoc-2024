@@ -1,3 +1,3 @@
-written in node.js + rust.
-written in under 20 minutes.
+written in node.js + rust. <br>
+written in under 20 minutes. <br>
 two stars.

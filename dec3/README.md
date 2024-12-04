@@ -1,5 +1,5 @@
-written in node.js + rust.
-less than twenty minutes combined for initial solution.
+written in node.js + rust. <br>
+less than twenty minutes combined for initial solution. <br>
 two stars.
 
 ## rust
