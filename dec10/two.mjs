@@ -11,13 +11,13 @@ import fs from "fs/promises";
     const data = file.split('\n').map(row => row.split('').map(el => el === "." ? -1 : Number(el)))
     let zeroes = [];
     data.forEach((row, i) => row.forEach((cell, j) => { if(cell === 0) return zeroes.push({ x: j, y: i, val: 0 }) }))
-    const nines = [];
+    let nines = 0;
     zeroes.forEach((zero, i) => {
         const queue = [zero];
         while(queue.length > 0){
             const { x, y, val } = queue.shift();
             if(val === 9){
-                nines.push(1);
+                nines++;
                 continue;
             }
             directions.forEach(([dx, dy]) => {
@@ -29,5 +29,5 @@ import fs from "fs/promises";
             })
         }
     })
-    console.log(nines.length);
+    console.log(nines);
 })()
